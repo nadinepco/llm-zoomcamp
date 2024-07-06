@@ -5,6 +5,7 @@
 - [Google Flan T5](#23-google-flan-t5)
 - [Phi-3-mini](#24-phi-3-mini)
 - [Mistral-7B](#25-mistral-7b)
+- [Running LLMs on CPU](#26-ollama---running-llms-on-cpu)
 
 
 
@@ -52,3 +53,25 @@ https://huggingface.co/docs/transformers/en/llm_tutorial
 from huggingface_hub import login
 login(token=os.environ['HF_TOKEN'])
 ```
+
+## 2.6 Ollama - Running LLMs on CPU
+### Install [Ollama](https://github.com/ollama/ollama)
+For Linux:
+```
+curl -fsSL https://ollama.com/install.sh | sh
+
+ollama start
+ollama pull phi3
+ollama run phi3
+```
+
+### Run Ollama with Docker
+```
+docker run -it \
+    -v ollama:/root/.ollama \
+    -p 11434:11434 \
+    --name ollama \
+    ollama/ollama
+```
+
+
