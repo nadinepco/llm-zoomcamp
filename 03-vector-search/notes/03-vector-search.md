@@ -76,8 +76,8 @@ response = es_client.search(
 )
 ```
 
-## 3.3 Evaluating Retrieval
-### 3.3.1 Introduction
+## 3.2 Evaluating Retrieval
+### 3.2.1 Introduction
 * To be able to evaluate the retrieval, typically we need a gold standard data set or "Ground Truth" dataset for each query. \
     ```
     Example:
@@ -85,7 +85,7 @@ response = es_client.search(
     Relevant documents: doc1 doc4 doc 11
     ```
 
-### 3.3.2 Getting ground truth data
+### 3.2.2 Getting ground truth data
 * Some ways to generating ground truth data:
     * Humans annotators
     * Observing what are the usual questions asked by users and sees what the system returns and evaluate the result
@@ -142,7 +142,7 @@ response = es_client.search(
     [Getting ground truth data set notebook](https://github.com/nadinepco/llm-zoomcamp/blob/ad3fcab7667e1738431edc13c3dec54c46356f47/03-vector-search/eval/ground-truth-data.ipynb)
 
 
-### 3.3.3 Ranking evaluation
+### 3.2.3 Evaluation Metrics
 * Metrics to be used: 
     * Hit rate (recall) - if the relevant document is retrieved or not
         ```
@@ -198,7 +198,7 @@ response = es_client.search(
 
             return total_score / len(relevance_total)
         ```
-### 3.3.3 [Ranking evaluation: text search](https://github.com/nadinepco/llm-zoomcamp/blob/ad3fcab7667e1738431edc13c3dec54c46356f47/03-vector-search/eval/evaluate-text.ipynb)
+### 3.2.4 [Ranking evaluation: text search](https://github.com/nadinepco/llm-zoomcamp/blob/ad3fcab7667e1738431edc13c3dec54c46356f47/03-vector-search/eval/evaluate-text.ipynb)
 #### Elastic search mapping / index settings
 ```python
 from elasticsearch import Elasticsearch
@@ -316,7 +316,7 @@ hit_rate(relevance_total)
 mrr(relevance_total)
 ```
 
-### 3.3.4 [Ranking evaluation: Vector search](https://github.com/nadinepco/llm-zoomcamp/blob/ad3fcab7667e1738431edc13c3dec54c46356f47/03-vector-search/eval/evaluate-vector.ipynb)
+### 3.2.5 [Ranking evaluation: Vector search](https://github.com/nadinepco/llm-zoomcamp/blob/ad3fcab7667e1738431edc13c3dec54c46356f47/03-vector-search/eval/evaluate-vector.ipynb)
 
 #### Elastic search mapping / index settings with vector
 ```python
