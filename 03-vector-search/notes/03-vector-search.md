@@ -3,6 +3,9 @@
 - [Semantic Search](#31-semantic-search)
 - [Evaluating Retrieval](#33-evaluating-retrieval)
     - [Getting ground truth data](#332-getting-ground-truth-data)
+    - [Evaluation Metrics](#323-evaluation-metrics)
+    - [Ranking evaluation: text search](#324-ranking-evaluation-text-search)
+    - [Ranking evaluation: Vector search](#325-ranking-evaluation-vector-search)
 
 ## 3.1 Semantic Search with Elastic search
 * Two very important concepts in Elasticsearch are documents and indexes.
