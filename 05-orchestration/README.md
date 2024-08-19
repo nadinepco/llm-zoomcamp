@@ -108,7 +108,7 @@ After exporting the chunks and embeddings, we can test the search query to retri
   <img src="https://markdown-videos-api.jorgenkh.no/youtube/z5NqDcaBglY">
 </a>
 
-
+[Code](code/06_retrieval.py)
 
 ## 7. Trigger Daily Runs
 
@@ -121,7 +121,7 @@ This section demonstrates how to schedule and trigger daily runs for your data p
 
 ## Homework
 
-TBA
+See [here](../cohorts/2024/05-orchestration/homework.md).
 
 # Notes
 
